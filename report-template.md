@@ -32,13 +32,13 @@
 
 TODO: Replace the image below with your own.
 
-![model_train_score.png](img/model_train_score.png)
+![Model Train Score](https://github.com/BTANISHA11/cd0385-project-starter/raw/main/Screenshot%20(746).png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
 TODO: Replace the image below with your own.
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score.png](https://github.com/BTANISHA11/cd0385-project-starter/raw/main/Screenshot%20(745).png))
 
 ## Summary
 The project demonstrated the power of AutoGluon's AutoML capabilities in practical scenarios like predicting bike-sharing demand. Initial models served as a robust baseline, significantly improved by featuring engineering and exploratory analysis. While hyperparameter tuning provided benefits, feature engineering proved essential for this dataset. The study highlighted the importance of balancing resource constraints such as time and memory when deploying large-scale algorithms, optimizing exploration vs. exploitation, and employing model ensembling.
