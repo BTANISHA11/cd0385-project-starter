@@ -3,23 +3,23 @@
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: In my experiments, I conducted several trials, including the initial raw submission, added features through exploratory data analysis, and feature engineering. During these submissions, I realized that some models produced negative prediction values which caused Kaggle submission errors. To address this, I replaced all negative predictions with zero before submitting the results.
+ In my experiments, I conducted several trials, including the initial raw submission, added features through exploratory data analysis, and feature engineering. During these submissions, I realized that some models produced negative prediction values which caused Kaggle submission errors. To address this, I replaced all negative predictions with zero before submitting the results.
 
 ### What was the top ranked model that performed?
-TODO: The model created using added features (WeightedEnsemble_L3) delivered the best performance, achieving a validation RMSE score of 37.9800 and a Kaggle score of 0.44798. This model was developed through enhanced data processing and without employing hyperparameter optimization, outperforming others on unseen test data.
+ The model created using added features (WeightedEnsemble_L3) delivered the best performance, achieving a validation RMSE score of 37.9800 and a Kaggle score of 0.44798. This model was developed through enhanced data processing and without employing hyperparameter optimization, outperforming others on unseen test data.
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-TODO: Exploratory data analysis identified opportunities to transform existing data for improved model performance. Features such as datetime were parsed to extract hour, weekday, etc. to capture temporal patterns. Features like season and weather were converted to categorical types, adding a new day_type feature derived from holiday and workingday.
+ Exploratory data analysis identified opportunities to transform existing data for improved model performance. Features such as datetime were parsed to extract hour, weekday, etc. to capture temporal patterns. Features like season and weather were converted to categorical types, adding a new day_type feature derived from holiday and workingday.
 ### How much better did your model preform after adding additional features and why do you think that is?
-TODO: Model performance improved dramatically, about 138% better than the initial attempt. This was primarily due to addressing multicollinearity by dropping highly correlated features and transforming numeric categorical variables to actual categorical types, which helped the model leverage patterns more effectively.
+ Model performance improved dramatically, about 138% better than the initial attempt. This was primarily due to addressing multicollinearity by dropping highly correlated features and transforming numeric categorical variables to actual categorical types, which helped the model leverage patterns more effectively.
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-TODO: Hyperparameter tuning enhanced model performance notably, though not always outmatching the feature-engineered model without tuning. Different configurations were tested, revealing the importance of time limits and presets in AutoGluon, as computational overhead can hinder model building with complex hyperparameter sets.
+ Hyperparameter tuning enhanced model performance notably, though not always outmatching the feature-engineered model without tuning. Different configurations were tested, revealing the importance of time limits and presets in AutoGluon, as computational overhead can hinder model building with complex hyperparameter sets.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
-TODO: With more time, I’d explore deeper hyperparameter tuning with high-quality presets and extend time limits. Also, blending models at different ensemble stages or varying architectures could provide novel insights and improvements.
+ With more time, I’d explore deeper hyperparameter tuning with high-quality presets and extend time limits. Also, blending models at different ensemble stages or varying architectures could provide novel insights and improvements.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 | Model                   | HPO1                           | HPO2                           | HPO3                                   | Score  |
